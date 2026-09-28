@@ -11,11 +11,9 @@ namespace Game10003
     public class Game
     {
         // Place your variables here:
+        private Color[] circleColors = { Color.Yellow };
 
-
-        /// <summary>
-        ///     Setup runs once before the game loop begins.
-        /// </summary>
+      
         public void Setup()
         {
             Window.SetTitle("Starry Night Sky");
@@ -27,7 +25,9 @@ namespace Game10003
         /// </summary>
         public void Update()
         {
-
+            Window.ClearBackground(Color.Black);
+            // Draw Yellow Stars
+            Draw.FillColor = Color.Yellow;
         }
     }
 }
