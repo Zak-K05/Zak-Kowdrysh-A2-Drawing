@@ -11,9 +11,14 @@ namespace Game10003
     public class Game
     {
         // Place your variables here:
-        private Color[] circleColors = { Color.Yellow };
+        // Positions of the shooting stars
+        private float[] starX = new float[20];
+        private float[] starY = new float[20];
 
-      
+        // Number of stars currently created
+        private int starCount = 0;
+
+
         public void Setup()
         {
             Window.SetTitle("Starry Night Sky");
@@ -25,9 +30,14 @@ namespace Game10003
         /// </summary>
         public void Update()
         {
-            Window.ClearBackground(Color.Black);
-            // Draw Yellow Stars
-            Draw.FillColor = Color.Yellow;
-        }
+            Window.ClearBackground(Color.DarkGray);
+                // Positions of the shooting stars
+        private float[] starX = new float[20];
+        private float[] starY = new float[20];
+
+        // Number of stars currently created
+        private int starCount = 0;
+
+    }
     }
 }
